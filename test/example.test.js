@@ -1,4 +1,5 @@
 import { rockPaperScissors } from '../utils.js';
+import { computerThrow } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -35,5 +36,23 @@ test('checks if user beats ', (expect) => {
 test('checks if user & computer throws area match', (expect) => {
     const expected = 'computerwin';
     const actual = rockPaperScissors('scissors', 'scissors');
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'rock';
+    const actual = computerThrow(1);
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'paper';
+    const actual = computerThrow(2);
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'scissors';
+    const actual = computerThrow(3);
     expect.equal(actual, expected);
 });
