@@ -14,6 +14,9 @@ let totalMatches = 0;
 let totalWins = 0;
 let totalResets = 0;
 
+const randomNumber = Math.ceil(Math.random() * 3) ;
+
+
 
 
 
