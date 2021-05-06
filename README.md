@@ -9,3 +9,17 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## HTML SETUP
+1) radio buttons for rock patyer and scissors 
+    get users choice
+2) button to confirm choice, run function(s) 
+3) Divs for results display
+
+## INTIALIZE STATE
+wins, total = 0 
+## EVENTS 
+button click
+    generate computer choice
+    grab users choice
+    compare choices
+    update wins & total

@@ -1,18 +1,58 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { rockPaperScissors } from '../utils.js';
+import { computerThrow } from '../utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+test('checks if user & computer throws are a match', (expect) => {
+    const expected = 'draw';
+    const actual = rockPaperScissors('rock', 'rock');
+    expect.equal(actual, expected);
+});
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+test('checks if user beats ', (expect) => {
+    const expected = 'userwin';
+    const actual = rockPaperScissors('paper', 'rock');
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'computerwin';
+    const actual = rockPaperScissors('scissors', 'rock');
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws are a match', (expect) => {
+    const expected = 'draw';
+    const actual = rockPaperScissors('paper', 'paper');
+    expect.equal(actual, expected);
+});
+
+test('checks if user beats ', (expect) => {
+    const expected = 'userwin';
+    const actual = rockPaperScissors('scissors', 'paper');
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'computerwin';
+    const actual = rockPaperScissors('scissors', 'scissors');
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'rock';
+    const actual = computerThrow(1);
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'paper';
+    const actual = computerThrow(2);
+    expect.equal(actual, expected);
+});
+
+test('checks if user & computer throws area match', (expect) => {
+    const expected = 'scissors';
+    const actual = computerThrow(3);
     expect.equal(actual, expected);
 });
