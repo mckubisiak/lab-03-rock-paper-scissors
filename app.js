@@ -41,7 +41,7 @@ playButton.addEventListener('click', () => {
         matchesPlayed.textContent = `Matches Played: ${totalMatches}`;
         matchesWon.textContent = `Wins: ${totalWins}`;
         winPercent.textContent = `Win Percentage: ${Math.ceil(totalWins / totalMatches * 100)}`;
-        results.textContent = `sorry you lose to ${computeroutput}`;
+        results.textContent = `Sorry you lose to ${computeroutput}`;
         
     }
         
@@ -49,7 +49,7 @@ playButton.addEventListener('click', () => {
         totalMatches++;
         matchesPlayed.textContent = `Matches Played: ${totalMatches}` ;
         winPercent.textContent = `Win Percentage: ${Math.ceil(totalWins / totalMatches * 100)}`;
-        results.textContent = `it a draw with ${computeroutput}`;
+        results.textContent = `It's a draw with ${computeroutput}`;
         matchesWon.textContent = `Wins: ${totalWins}`;
     }
 
@@ -59,7 +59,7 @@ playButton.addEventListener('click', () => {
         matchesPlayed.textContent = `Matches Played: ${totalMatches}`;
         winPercent.textContent = `Win Percentage: ${Math.ceil(totalWins / totalMatches * 100)}`;
         matchesWon.textContent = `Wins: ${totalWins}`;
-        results.textContent = `congrats you won vs ${computeroutput}`;
+        results.textContent = `Congrats you won vs ${computeroutput}`;
     }
 
     
@@ -74,9 +74,6 @@ resetButton.addEventListener('click', () => {
     matchesWon.textContent = `Wins: 0`;
     resetSpan.textContent = `Cowards clicks: ${totalResets}`;
 });
-
-
-
 
 
 

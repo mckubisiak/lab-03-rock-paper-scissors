@@ -19,7 +19,12 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: purple;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    color: white;
 }
 
 main {
@@ -27,7 +32,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -89,8 +93,9 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: purple;
     box-shadow: var(--shadow);
+    color: white;
 }
   
   @keyframes pulse {
@@ -111,3 +116,27 @@ footer {
     }
 
   }
+
+.button {
+    margin-top: 30px;
+}
+
+button {
+    height: 125%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: rgb(255, 0, 191);
+
+}
+
+main {
+    background-color: rgb(139, 139, 39);
+}
+
+h1 {
+    background-color: rgb(172, 89, 13);
+}
+
+#coward {
+    margin-top: 30px;
+}
